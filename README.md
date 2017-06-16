@@ -1,3 +1,3 @@
 #newproj.rus
 
-Чистый проект.
+Сделан Header и Carousel.

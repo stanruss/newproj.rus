@@ -1,0 +1,222 @@
+@import "fonts"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: rgba(0,0,0,.25)
+	border-color: rgba(0,0,0,.25)
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	box-sizing: border-box
+header
+	width: 100%
+	.top
+		color: #fff $main-color
+		.hamburger 
+			padding-top: 20px
+			padding-bottom: 18px
+		.Logo
+			float: right
+			height: 71px
+			display: block
+			line-height: 71px
+			text-transform: uppercase
+			font-size: 15px
+			font-family: RobotoBold
+			margin-right: 80px
+			margin-left: 13px
+			.fa
+				font-size: 40px
+				float: left
+				line-height: 71px
+				margin-right: 13px
+	.top-line
+		color: #fff $main-color
+		height: 71px
+		width: 100%
+		top: 0
+		position: relative
+		.Logo
+			height: 71px
+			display: block
+			float: left
+			line-height: 71px
+			text-transform: uppercase
+			font-size: 15px
+			font-family: RobotoBold
+			margin-right: 106px
+			margin-left: 13px
+			.fa
+				font-size: 40px
+				float: left
+				line-height: 71px
+				margin-right: 13px
+		.center
+			size: 580px 71px
+
+			.my-menu
+				height: 71px
+				margin: 0 auto
+				width: 475px
+				li
+					position: relative
+					text-align: center
+					margin-right: 35px
+					&:last-child
+						margin-right: 0
+					&:after
+						display: block
+						left: 0
+						content: ''
+						width: 0
+						background-color: $accent
+						height: 4px
+						position: absolute
+						bottom: 1px
+						transition: all 0.2s ease
+					&:hover:after
+						width: 100%
+				a
+					color: #fff
+					font-size: 12px
+					padding: 29px 0
+					text-transform: uppercase
+					font-family: RobotoBold
+					text-decoration: none
+					transition: color 0.2s ease
+					&:hover
+						color: $accent
+
+				li.active
+					position: relative
+					&:after
+						display: block
+						left: 0
+						content: ''
+						width: 100%
+						background-color: $accent
+						height: 4px
+						position: absolute
+						bottom: 1px
+						transition: all 0.2s ease
+
+				.list-inline
+					height: 71px
+					line-height: 71px
+					margin-bottom: 0
+		.social
+			color: #fff $accent
+			padding-right: 2px
+			height: 71px
+			p
+				float: left	
+				line-height: 71px	
+				margin-bottom: 0	
+				margin-right: 25px
+				margin-left: 25px
+				text-transform: uppercase
+				font-size: 13px
+				font-family: RobotoBold
+			.fa
+				float: left
+				line-height: 71px
+				margin-right: 15px
+		
+	.carousel-main
+		size: 100% 564px
+		position: relative
+		background-color: $main-color
+		.photo1
+			size: 100% 564px 
+			background-image: url(../img/bg-2.jpg)
+			background-position: center 0
+			background-size: cover
+		.photo2
+			size: 100% 564px 
+			background-image: url(../img/bg-3.jpg)
+			background-position: center 0
+			background-size: cover
+		.photo3
+			size: 100% 564px 
+			background-image: url(../img/bg-4.jpg)
+			background-position: center 0
+			background-size: cover
+		.owl-dots
+			text-align: center
+			position: relative
+			bottom: 35px
+			width: 100%
+			-webkit-backface-visibility: hidden
+			-moz-backface-visibility: hidden
+			-ms-backface-visibility: hidden
+			backface-visibility: hidden
+
+		.owl-dot
+			border-radius: 50px
+			height: 10px
+			width: 10px
+			display: inline-block
+			background: $accent
+			opacity: 0.5
+			margin-left: 5px
+			margin-right: 5px
+			&.active
+				background: $main-color
+		.owl-prev
+			position: absolute
+			height: 564px
+			width: 40px
+			top: 0
+			left: 0
+			background-color: $main-color
+			opacity: 0.2
+			transition: opacity 0.3s ease
+			&:hover
+				opacity: 0.7
+			img
+				padding-top: 262px
+		.owl-next
+			position: absolute
+			height: 564px
+			width: 40px
+			top: 0
+			right: 0
+			background-color: $main-color
+			opacity: 0.2
+			transition: opacity 0.3s ease
+			&:hover
+				opacity: 0.7
+			img
+				padding-top: 262px
+
+.mm-navbar
+	img
+		height: 19px
+
+@import "media" 
